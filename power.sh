@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd powering-raspberrypi
+cd piwild
 
 source power-env/bin/activate
 
