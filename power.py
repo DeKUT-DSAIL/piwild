@@ -99,7 +99,8 @@ try:
         logging.info(message)
         print('Shutting down...')
         sleep(1)
-        run(['sudo', 'shutdown', 'now'], check=True)
+        run(['systemctl', 'poweroff'], check=True) #Use Systemd Logind (No Sudo Required) - passwordless shutdown
+        #run(['sudo', 'shutdown', 'now'], check=True)
         #subprocess.call(['sudo', 'shutdown' ,'now']) #Shutdown the Pi
 
 
